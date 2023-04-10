@@ -24,7 +24,6 @@ int is_full(Stacktype* s) {
 	return (s->top == (MAX_STACK_SIZE - 1));
 }
 
-
 void push(Stacktype* s, element item) {
 	if (is_full(s)) {
 		fprintf(stderr, "스택 포화 에러\n");
